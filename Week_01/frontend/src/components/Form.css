@@ -1,0 +1,132 @@
+/* frontend/src/components/Form.css */
+.form-container {
+    max-width: 450px; /* Slightly wider for better spacing */
+    margin: 2rem auto;
+    padding: 2.5rem; /* More padding */
+    border: 1px solid #e0e0e0; /* Lighter border */
+    border-radius: 8px; /* More pronounced radius */
+    background-color: #ffffff; /* Explicit white background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Softer shadow */
+}
+
+.profile-container {
+    max-width: 550px;
+}
+
+.profile-container p {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+.profile-container p strong {
+    color: #333;
+}
+
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 2rem; /* More space below title */
+    color: #333;
+    font-weight: 600; /* Slightly bolder title */
+}
+
+.form-group {
+    margin-bottom: 1.5rem; /* More space between form groups */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.6rem; /* More space below label */
+    font-weight: 500; /* Medium weight for labels */
+    color: #555; /* Darker grey for labels */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem 1rem; /* More padding inside input fields */
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Slightly more rounded inputs */
+    box-sizing: border-box;
+    font-size: 1rem; /* Ensure readable font size */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff; /* Highlight color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Focus ring */
+    outline: none; /* Remove default outline */
+}
+
+.form-group textarea {
+    min-height: 100px; /* Taller textarea */
+    resize: vertical;
+}
+
+button[type="submit"],
+.form-container button { /* General button styling within form-container */
+    display: block;
+    width: 100%;
+    padding: 0.85rem 1rem; /* Adjusted padding */
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.05rem; /* Slightly larger font */
+    font-weight: 500;
+    margin-top: 1.5rem; /* More space above button */
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+}
+
+.form-container button.secondary-button { /* For cancel or less prominent actions */
+    background-color: #6c757d; /* Secondary color */
+}
+.form-container button.secondary-button:hover {
+    background-color: #5a6268;
+}
+
+
+.form-container button + button { /* Spacing for multiple buttons */
+    margin-top: 0.75rem;
+}
+
+
+button[type="submit"]:hover,
+.form-container button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+button:active,
+.form-container button:active {
+    transform: scale(0.98); /* Slight shrink effect on click */
+}
+
+.error-text {
+    color: #dc3545; /* Bootstrap danger color */
+    font-size: 0.875rem;
+    margin-top: 0.3rem; /* Space above error message */
+    padding-left: 0.2rem;
+}
+
+.success-text {
+    color: #28a745; /* Bootstrap success color */
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Profile specific view styles */
+.profile-view div p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #444;
+}
+.profile-view div p strong {
+    color: #000;
+    margin-right: 8px;
+}
+.profile-view button {
+    margin-top: 20px;
+}
